@@ -1,12 +1,14 @@
 from password_gen import generate_password
 from url_shortener import shorten_url, retrieve_url
+from file_organizer import organize_files
 
 def main():
     while True:
         print("1. Generate Password")
         print("2. Shorten URL")
         print("3. Retrieve URL")
-        print("4. Exit")
+        print("4. Organize Files")
+        print("5. Exit")
 
         choice = input("Choose an option: ")
 
@@ -24,8 +26,13 @@ def main():
             short_code = input("Enter short URL code: ")
             original_url = retrieve_url(short_code)
             print("Original URL:", original_url)
-
+        
         elif choice == "4":
+            folder_path = input("Enter folder path to organize: ")
+            result = organize_files(folder_path)
+            print(result)
+
+        elif choice == "5":
             print(":(")
             break
 
