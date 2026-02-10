@@ -10,7 +10,7 @@ from PyQt6.QtGui import QIcon
 class algorithms(QWidget):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("algorithms visual")
+        self.setWindowTitle("algorithms")
         self.setGeometry(200, 200, 800, 400)
         self.setWindowIcon(QIcon("icons/algorithms-icon.png"))
         self.array = []
