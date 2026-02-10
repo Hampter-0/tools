@@ -78,7 +78,7 @@ class algorithms(QWidget):
         self.timer.stop()
         self.elapsed = time.time() - self.start_time
         self.update()
-        self.label.setText(f"Sorted ({algorithm})! Attempts: {self.attempts} | Time: {self.elapsed:.2f}s")
+        self.label.setText(f"Sorted Attempts: {self.attempts} | Time: {self.elapsed:.2f}s")
 
     def bogo_sort(self):
         while not self.is_sorted(self.array):

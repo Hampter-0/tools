@@ -13,7 +13,8 @@ def main():
         print("3. Retrieve URL")
         print("4. Organize Files")
         print("5. algorithms")
-        print("6. Exit")
+        print("6. enchanting table translator")
+        print("7. Exit")
 
         choice = input("Choose an option: ")
 
@@ -43,10 +44,13 @@ def main():
             window.show()
             app.exec()
 
-        
+        elif choice == "6":
+            from translate_to_enchant import run_translator
+            run_translator()
+
         
 
-        elif choice == "6":
+        elif choice == "7":
             print(":(")
             break
 
