@@ -1,6 +1,10 @@
 from password_gen import generate_password
 from url_shortener import shorten_url, retrieve_url
 from file_organizer import organize_files
+from algorithms import algorithms
+from PyQt6.QtWidgets import QApplication
+import sys
+
 
 def main():
     while True:
@@ -8,7 +12,8 @@ def main():
         print("2. Shorten URL")
         print("3. Retrieve URL")
         print("4. Organize Files")
-        print("5. Exit")
+        print("5. algorithms")
+        print("6. Exit")
 
         choice = input("Choose an option: ")
 
@@ -31,8 +36,17 @@ def main():
             folder_path = input("Enter folder path to organize: ")
             result = organize_files(folder_path)
             print(result)
-
+        
         elif choice == "5":
+            app = QApplication(sys.argv)
+            window = algorithms()
+            window.show()
+            app.exec()
+
+        
+        
+
+        elif choice == "6":
             print(":(")
             break
 
