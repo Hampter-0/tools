@@ -7,11 +7,11 @@ def run_translator():
     normal_font = ImageFont.truetype("arial.ttf", 20)
 
     root = tk.Tk()
-    root.title("Minecraft Enchantment Translator")
+    root.title("type ur stuff here")
     root.geometry("900x500")
     root.configure(bg="#0f172a")
 
-    title = tk.Label(root, text="Minecraft Enchantment Translator",
+    title = tk.Label(root, text="type ur stuff here",
                      font=("Arial", 20, "bold"), fg="white", bg="#0f172a")
     title.pack(pady=10)
 
